@@ -10,32 +10,28 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      font-family: 'Segoe UI', Arial, sans-serif;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     body {
-      background: linear-gradient(180deg, #1A1A2E 0%, #111827 100%);
-      color: #ffffff;
-      line-height: 1.7;
-      padding: 40px 20px;
+      background: #1A1A2E;
+      color: white;
+      min-height: 100vh;
     }
 
-    .container {
-      max-width: 950px;
-      margin: 0 auto;
-      background: rgba(255,255,255,0.04);
-      border: 1px solid rgba(255,255,255,0.08);
-      border-radius: 24px;
-      padding: 50px;
-      backdrop-filter: blur(10px);
-      box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+    .header {
+      background: linear-gradient(135deg, #6C2BD9 0%, #4C1D95 100%);
+      padding: 60px 20px 40px;
+      text-align: center;
+      border-bottom-left-radius: 28px;
+      border-bottom-right-radius: 28px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.35);
     }
 
     .logo {
       font-size: 42px;
       font-weight: 800;
-      text-align: center;
-      margin-bottom: 12px;
+      margin-bottom: 10px;
     }
 
     .logo span {
@@ -43,139 +39,153 @@
     }
 
     .subtitle {
-      text-align: center;
-      color: #cbd5e1;
-      margin-bottom: 40px;
-      font-size: 18px;
-    }
-
-    h1 {
-      font-size: 38px;
-      margin-bottom: 15px;
-      text-align: center;
-    }
-
-    .updated {
-      text-align: center;
-      color: #94a3b8;
-      margin-bottom: 40px;
-    }
-
-    h2 {
-      font-size: 24px;
-      margin-top: 35px;
-      margin-bottom: 15px;
-      color: #ff6b35;
-    }
-
-    p {
-      color: #e2e8f0;
+      color: rgba(255,255,255,0.85);
       font-size: 17px;
     }
 
+    .content {
+      max-width: 950px;
+      margin: 30px auto;
+      padding: 0 20px 50px;
+    }
+
+    .card {
+      background: #25253A;
+      border-radius: 22px;
+      padding: 30px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.25);
+      border: 1px solid rgba(255,255,255,0.04);
+    }
+
+    h1 {
+      font-size: 32px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      color: #ff6b35;
+      margin-bottom: 16px;
+      font-size: 22px;
+    }
+
+    p {
+      color: #E5E7EB;
+      line-height: 1.7;
+      font-size: 16px;
+    }
+
     ul {
-      margin-left: 25px;
-      margin-top: 10px;
+      padding-left: 22px;
     }
 
     li {
       margin-bottom: 10px;
-      color: #e2e8f0;
-      font-size: 17px;
+      color: #E5E7EB;
+      font-size: 16px;
+    }
+
+    .updated {
+      color: #CBD5E1;
+      margin-top: 8px;
+      font-size: 14px;
     }
 
     .footer {
-      margin-top: 50px;
       text-align: center;
-      color: #94a3b8;
+      color: #94A3B8;
+      padding: 30px;
       font-size: 14px;
-      border-top: 1px solid rgba(255,255,255,0.08);
-      padding-top: 25px;
     }
 
     @media (max-width: 768px) {
-      .container {
-        padding: 28px;
-      }
-
-      h1 {
-        font-size: 28px;
-      }
-
       .logo {
         font-size: 32px;
       }
 
-      h2 {
-        font-size: 20px;
+      h1 {
+        font-size: 26px;
+      }
+
+      .card {
+        padding: 22px;
       }
     }
   </style>
 </head>
-
 <body>
 
-  <div class="container">
+  <div class="header">
+    <div class="logo">Pou<span>Paí</span></div>
+    <div class="subtitle">Abriu. Comparou. Economizou.</div>
+    <div class="updated">Última atualização: 18/05/2026</div>
+  </div>
 
-    <div class="logo">
-      Pou<span>Paí</span>
+  <div class="content">
+
+    <div class="card">
+      <h1>Política de Privacidade</h1>
+      <p>
+        Sua privacidade é importante para nós. Esta política explica como o PouPaí
+        coleta, utiliza e protege suas informações.
+      </p>
     </div>
 
-    <div class="subtitle">
-      Abriu. Comparou. Economizou.
+    <div class="card">
+      <h2>Quem somos</h2>
+      <p>
+        O PouPaí é uma plataforma de comparação de preços entre supermercados,
+        criada para ajudar usuários a economizar nas compras.
+      </p>
     </div>
 
-    <h1>Política de Privacidade</h1>
-
-    <div class="updated">
-      Última atualização: 18/05/2026
+    <div class="card">
+      <h2>Dados coletados</h2>
+      <ul>
+        <li>Nome</li>
+        <li>E-mail</li>
+        <li>Foto de perfil (Google Login)</li>
+        <li>Favoritos</li>
+        <li>Listas de compras</li>
+        <li>Dados técnicos básicos para funcionamento</li>
+      </ul>
     </div>
 
-    <h2>Quem somos</h2>
-    <p>
-      O PouPaí é um aplicativo de comparação de preços entre supermercados,
-      permitindo ao usuário encontrar melhores ofertas, salvar favoritos e
-      organizar listas de compras com praticidade.
-    </p>
-
-    <h2>Dados coletados</h2>
-    <ul>
-      <li>Nome</li>
-      <li>E-mail</li>
-      <li>Foto de perfil (quando fornecida pelo Google Login)</li>
-      <li>Produtos e mercados favoritos</li>
-      <li>Listas de compras criadas pelo usuário</li>
-      <li>Dados técnicos necessários para funcionamento do aplicativo</li>
-    </ul>
-
-    <h2>Como utilizamos os dados</h2>
-    <p>
-      Utilizamos os dados para autenticação segura, sincronização de listas,
-      personalização da experiência, melhoria do aplicativo e funcionamento
-      adequado dos serviços oferecidos.
-    </p>
-
-    <h2>Compartilhamento</h2>
-    <p>
-      O PouPaí não comercializa dados pessoais dos usuários com terceiros.
-    </p>
-
-    <h2>Segurança</h2>
-    <p>
-      Aplicamos medidas técnicas razoáveis para proteger as informações dos usuários
-      contra acessos não autorizados.
-    </p>
-
-    <h2>Exclusão de conta</h2>
-    <p>
-      O usuário pode solicitar a exclusão da conta e dos dados associados
-      diretamente pelos canais oficiais disponibilizados pelo aplicativo.
-    </p>
-
-    <div class="footer">
-      © 2026 PouPaí — Todos os direitos reservados
+    <div class="card">
+      <h2>Como usamos os dados</h2>
+      <p>
+        Os dados são utilizados para autenticação, sincronização das listas,
+        personalização da experiência e melhoria contínua da plataforma.
+      </p>
     </div>
 
+    <div class="card">
+      <h2>Compartilhamento</h2>
+      <p>
+        Não comercializamos dados pessoais com terceiros.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Segurança</h2>
+      <p>
+        Utilizamos práticas de segurança adequadas para proteger as informações
+        dos usuários.
+      </p>
+    </div>
+
+    <div class="card">
+      <h2>Exclusão de conta</h2>
+      <p>
+        O usuário pode solicitar a exclusão da conta e dos dados associados pelos
+        canais oficiais do aplicativo.
+      </p>
+    </div>
+
+  </div>
+
+  <div class="footer">
+    © 2026 PouPaí — Todos os direitos reservados
   </div>
 
 </body>
